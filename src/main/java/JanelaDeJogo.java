@@ -22,6 +22,8 @@ public class JanelaDeJogo extends JFrame{
         setContentPane(painelJogo);
         // Destrói esta janela, removendo-a completamente da memória.
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        // Causes this Window to be sized to fit the preferred size and layouts
+        // of its subcomponents.
         pack();
         setVisible(true); // opcional. Pode optar por fazer depois.
     }
