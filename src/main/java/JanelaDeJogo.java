@@ -17,6 +17,7 @@ public class JanelaDeJogo extends JFrame{
             for (int coluna = 0; coluna < nrColunas; ++coluna){
                 botoes[linha][coluna] = new BotaoCampoMinado();
                 painelJogo.add(botoes[linha][coluna]);
+                //teste
             }
         }
         setContentPane(painelJogo);
