@@ -127,19 +127,19 @@ public class CampoMinado {
         return true;
     }
 
-    private void marcarComoTendoMina(int x, int y) {
+    public void marcarComoTendoMina(int x, int y) {
         if (estado[x][y] == TAPADO || estado[x][y] == DUVIDA) {
             estado[x][y] = MARCADO;
         }
     }
 
-    private void marcarComoSuspeita(int x, int y) {
+    public void marcarComoSuspeita(int x, int y) {
         if (estado[x][y] == TAPADO || estado[x][y] == MARCADO) {
             estado[x][y] = DUVIDA;
         }
     }
 
-    private void desmarcarQuadricula(int x, int y) {
+    public void desmarcarQuadricula(int x, int y) {
         if (estado[x][y] == MARCADO || estado[x][y] == DUVIDA) {
             estado[x][y] = TAPADO;
         }
